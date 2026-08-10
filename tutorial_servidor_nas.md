@@ -252,11 +252,9 @@ Apoia o canal se esse tutorial foi útil, considera virar membro.
 Caso algo tenha ficado confuso ou você tenha alguma melhoria, me avisa!
 
 Tamo junto ✌️
-
 🔧 Minhas modificações no servidor
 
-«Esta seção documenta as alterações que fiz depois de seguir o tutorial original.
-O objetivo é registrar a configuração específica do meu servidor para facilitar uma futura reinstalação ou recuperação.»
+Esta seção documenta as alterações que fiz depois de seguir o tutorial original. O objetivo é registrar a configuração específica do meu servidor para facilitar uma futura reinstalação ou recuperação.
 
 10) Comandos personalizados para administrar o servidor
 
@@ -276,7 +274,6 @@ Comando| Função
 Foi criado um comando para iniciar os serviços através do script do Termux:Boot:
 
 #!/data/data/com.termux/files/usr/bin/bash
-
 bash ~/.termux/boot/start-services.sh
 
 O comando pode ser executado simplesmente com:
@@ -288,7 +285,6 @@ nas-on
 O comando original foi modificado para não desligar o SSH. Dessa forma, o servidor pode continuar sendo administrado remotamente mesmo quando o File Browser estiver desligado.
 
 #!/data/data/com.termux/files/usr/bin/bash
-
 pkill filebrowser
 termux-wake-unlock
 
@@ -309,7 +305,6 @@ O cartão SD utilizado pelo servidor está montado em:
 O script utilizado é:
 
 #!/data/data/com.termux/files/usr/bin/bash
-
 pkill filebrowser 2>/dev/null
 filebrowser -a 0.0.0.0 -p 8080 -r /storage/00B3-03E9 -d ~/filebrowser.db > ~/.filebrowser.log 2>&1 &
 
@@ -324,7 +319,6 @@ O File Browser passa a mostrar a raiz do cartão SD.
 Para voltar ao funcionamento normal, foi criado o comando "raiz".
 
 #!/data/data/com.termux/files/usr/bin/bash
-
 pkill filebrowser 2>/dev/null
 filebrowser -a 0.0.0.0 -p 8080 -r ~/storage/shared -d ~/filebrowser.db > ~/.filebrowser.log 2>&1 &
 
@@ -349,7 +343,6 @@ O SSH do servidor utiliza a porta "8022".
 O script "login" é:
 
 #!/data/data/com.termux/files/usr/bin/bash
-
 ssh -p 8022 'USUARIO_DO_SERVIDOR'@'IP_DO_SERVIDOR'
 
 Depois de dar permissão de execução:
@@ -387,31 +380,31 @@ O resultado deve mostrar primeiro o script localizado em:
 Com essas modificações, o servidor pode ser administrado desta forma:
 
 login
-   ↓
+↓
 acesso SSH ao servidor
-   ↓
+↓
 nas-on
-   ↓
+↓
 SSH + File Browser funcionando
 
 Para utilizar o armazenamento do cartão SD:
 
 sd
-   ↓
+↓
 File Browser → cartão SD
 
 Para voltar ao armazenamento interno:
 
 raiz
-   ↓
+↓
 File Browser → armazenamento interno
 
 Para desligar somente a interface web:
 
 nas-off
-   ↓
+↓
 File Browser desligado
-   ↓
+↓
 SSH continua funcionando
 
 Dessa forma, o SSH permanece disponível como canal de administração, enquanto o File Browser pode ser ligado, desligado e alternado entre o armazenamento interno e o cartão SD sem precisar reiniciar o servidor.
