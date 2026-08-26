@@ -41,8 +41,17 @@ pkg instalar git curl wget descompactar tar ripgrep fd fzf clang fazer cmake pkg
 `-y` — respondeu automaticamente `sim` às confirmações solicitadas pelo `pacote`.
 ## Instalação do Neovim
 
-```bash
-pkg install neovim -y
+```batedor
+pkg instalar neovim -y
 ```
 
 Instala o Neovim no Termux, que será utilizado como base para a instalação e configuração do AstroNvim.
+## Instalação do AstroNvim
+
+```batedor
+git clone --profundidade 1 https://github.com/AstroNvim/template ~/.config/nvim
+rm -rf ~/.config/nvim/.git
+nvim
+```
+
+Baixa o template oficial do AstroNvim para a massa de configuração do Neovim, remova os arquivos de controle do Git do template e inicia o Neovim para concluir a configuração.
