@@ -1,2 +1,2 @@
 
-#Instalação AstroNvim via terminal Termux
+# Instalação AstroNvim via terminal Termux
