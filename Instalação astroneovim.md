@@ -3,36 +3,39 @@
 ## Atualização do Termux
 
 ```batedor
-atualização do pacote && atualização do pacote -y
+atualização do pkg && atualização do pkg -y
 ```
 
 Atualize uma lista de pacotes disponíveis e insta como versões mais recentes dos pacotes já instalados no Termux.
-Instalação dos pacotes
 
-pkg install git curl wget unzip tar ripgrep fd fzf clang make cmake pkg-config -y
+## Instalação dos pacotes
 
-"git" — usado para controlar versões e trabalhar com repositórios do GitHub.
+```batedor
+pkg instalar git curl wget descompactar tar ripgrep fd fzf clang fazer cmake pkg-config -y
+```
 
-"curl" — usado para fazer requisições e baixar arquivos pela internet.
+`git` — usado para controlar versões e trabalhar com repositórios do GitHub.
 
-"wget" — usado para baixar arquivos pela internet.
+`inscrito` — usado para fazer requisições e baixar arquivos pela internet.
 
-"unzip" — usado para extrair arquivos ".zip".
+`wget` — usado para baixar arquivos pela internet.
 
-"tar" — usado para criar e extrair arquivos compactados.
+`descompactar` — usado para extrair arquivos `.zíper`.
 
-"ripgrep" — ferramenta rápida para pesquisar texto dentro de arquivos e diretórios. O comando utilizado é "rg".
+`alcatrão` — usado para criar e extrair arquivos compactados.
 
-"fd" — ferramenta para localizar arquivos e diretórios rapidamente.
+`ripgrep` — ferragem rápida para pesquisar texto dentro de arquivos e diretórios. O comando utilizado é `rg`.
 
-"fzf" — ferramenta de busca e seleção interativa no terminal.
+`df` — ferragem para localizar arquivos e diretores rapidamente.
 
-"clang" — compilador usado para compilar programas escritos em C e C++.
+`fzf` — ferragem de busca e seleção interativa no terminal.
 
-"make" — ferramenta utilizada para automatizar processos de compilação.
+`barulho` — compilador usado para compilar programas escritos em C e C++.
 
-"cmake" — ferramenta usada para configurar projetos que precisam ser compilados.
+`fazer` — ferramenta utilizada para automatizar processos de compilação.
 
-"pkg-config" — ajuda programas a localizar bibliotecas instaladas e suas configurações.
+`fazer cm` — ferrama usada para configurar projetos que exigem ser compilados.
 
-"-y" — responde automaticamente "yes" às confirmações solicitadas pelo "pkg".
+`pkg-config` — ajuda programas a localizar bibliotecas instaladas e suas configurações.
+
+`-y` — respondeu automaticamente `sim` às confirmações solicitadas pelo `pacote`.
