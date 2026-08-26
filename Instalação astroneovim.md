@@ -3,7 +3,7 @@
 ## Atualização do Termux
 
 ```batedor
-atualização do pkg && atualização do pkg -y
+atualização do pacote && atualização do pacote -y
 ```
 
 Atualize uma lista de pacotes disponíveis e insta como versões mais recentes dos pacotes já instalados no Termux.
@@ -39,3 +39,10 @@ pkg instalar git curl wget descompactar tar ripgrep fd fzf clang fazer cmake pkg
 `pkg-config` — ajuda programas a localizar bibliotecas instaladas e suas configurações.
 
 `-y` — respondeu automaticamente `sim` às confirmações solicitadas pelo `pacote`.
+## Instalação do Neovim
+
+```bash
+pkg install neovim -y
+```
+
+Instala o Neovim no Termux, que será utilizado como base para a instalação e configuração do AstroNvim.
