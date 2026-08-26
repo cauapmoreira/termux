@@ -1,1 +1,1 @@
-# silver-giggle
+# config completa astroneovim termux 
