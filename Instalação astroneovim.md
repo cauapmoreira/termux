@@ -4,4 +4,4 @@
 
 ```batedor
 atualização do pacote && atualização do pacote -y
-Atualize uma lista de pacotes disponíveis e instala como versões mais recentes dos pacotes já instalados no Termux.
+Atualize uma lista de pacotes disponíveis e insta como versões mais recentes dos pacotes já instalados no Termux.
