@@ -1,4 +1,4 @@
-# Instalação AstroNvim via terminal Termux
+ Instalação AstroNvim via terminal Termux
 
 ## Atualização do Termux
 
@@ -48,10 +48,17 @@ pkg instalar neovim -y
 Instala o Neovim no Termux, que será utilizado como base para a instalação e configuração do AstroNvim.
 ## Instalação do AstroNvim
 
-```batedor
-git clone --profundidade 1 https://github.com/AstroNvim/template ~/.config/nvim
+batedor Atualização do Termux
+##
 rm -rf ~/.config/nvim/.git
 nvim
 ```
 
-Baixa o template oficial do AstroNvim para a massa de configuração do Neovim, remova os arquivos de controle do Git do template e inicia o Neovim para concluir a configuração.
+Baixa o template oficial do AstroNvim para a massa de configuração do Neovim, remove os arquivos de controle do Git do template e inicia o Neovim para concluir a configuração.
+## Instalação da Nerd Font
+
+```bash
+wget https://github.com/ryanoasis/nerd-fonts/releases/download/v3.5.1/JetBrainsMono.zip
+```
+
+Baixa o arquivo ZIP da JetBrainsMono Nerd Font, que pode ser utilizada para exibir corretamente os ícones e símbolos usados pelo AstroNvim e seus plugins no Termux.
